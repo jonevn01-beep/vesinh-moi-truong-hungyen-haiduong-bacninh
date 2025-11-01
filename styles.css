@@ -1,0 +1,683 @@
+/* Reset cơ bản */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", Arial, sans-serif;
+  line-height: 1.6;
+  color: #222;
+  background-color: #f7f8f9;
+}
+
+/* Container chung */
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* Header */
+.main-header {
+  background: #005e3a;
+  color: #fff;
+  padding: 10px 0;
+  border-bottom: 4px solid #00a859;
+}
+
+.header-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.logo-block {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo-icon {
+  font-size: 2rem;
+}
+
+.company-name {
+  font-weight: 700;
+  font-size: 1.2rem;
+}
+
+.company-tagline {
+  font-size: 0.9rem;
+  color: #cce6dd;
+}
+
+/* Navigation */
+.main-nav a {
+  color: #fff;
+  margin: 0 10px;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.main-nav a:hover {
+  text-decoration: underline;
+}
+
+/* Hotline button */
+.hotline-btn {
+  background: #ffcc00;
+  color: #000;
+  padding: 8px 15px;
+  border-radius: 6px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.hotline-btn:hover {
+  background: #ffd633;
+}
+
+/* Hero section */
+.hero {
+  background: linear-gradient(to right, #e9fff4, #ffffff);
+  padding: 40px 0;
+  text-align: center;
+}
+
+.hero-title {
+  font-size: 1.8rem;
+  margin-bottom: 15px;
+  color: #004d2b;
+}
+
+.hero-title .highlight {
+  color: #007b46;
+  font-weight: 600;
+}
+
+.hero-benefits div {
+  margin-top: 5px;
+  color: #004d2b;
+}
+
+.hero-call {
+  display: inline-block;
+  margin-top: 15px;
+  font-size: 1.4rem;
+  color: #fff;
+  background: #00a859;
+  padding: 10px 20px;
+  border-radius: 6px;
+  text-decoration: none;
+}
+
+.hero-call:hover {
+  background: #00994d;
+}
+
+.hero-zalo {
+  margin-top: 8px;
+  font-size: 1rem;
+  color: #006b3b;
+}
+
+/* Section titles */
+.section-title {
+  text-align: center;
+  font-size: 1.6rem;
+  color: #005e3a;
+  margin: 40px 0 20px;
+  position: relative;
+}
+
+.section-title::after {
+  content: "";
+  width: 80px;
+  height: 3px;
+  background: #00a859;
+  display: block;
+  margin: 10px auto 0;
+  border-radius: 5px;
+}
+
+/* Services grid */
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.service-card {
+  background: #fff;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  transition: transform 0.2s;
+}
+
+.service-card:hover {
+  transform: translateY(-4px);
+}
+
+.service-card h3 {
+  color: #007b46;
+  margin-bottom: 10px;
+  font-size: 1.1rem;
+}
+
+/* Pricing */
+.pricing-section {
+  background: #fff;
+  padding: 40px 0;
+}
+
+.pricing-note {
+  text-align: center;
+  color: #555;
+  margin-bottom: 10px;
+}
+
+.pricing-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.pricing-table th,
+.pricing-table td {
+  border: 1px solid #ddd;
+  padding: 12px;
+  text-align: left;
+}
+
+.pricing-table th {
+  background: #e9f8ef;
+}
+
+.pricing-table td {
+  background: #fff;
+}
+
+.pricing-cta {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.pricing-hotline {
+  display: inline-block;
+  background: #ffcc00;
+  color: #000;
+  padding: 10px 18px;
+  border-radius: 8px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.pricing-hotline:hover {
+  background: #ffe066;
+}
+
+/* FAQ */
+.faq-item {
+  background: #fff;
+  padding: 15px;
+  margin: 10px 0;
+  border-left: 4px solid #00a859;
+  border-radius: 6px;
+}
+
+.faq-item h3 {
+  color: #007b46;
+  font-size: 1.1rem;
+}
+
+/* Footer */
+.site-footer {
+  background: #004d2b;
+  color: #fff;
+  padding: 40px 0 20px;
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+}
+
+.footer-heading {
+  font-size: 1.3rem;
+  margin-bottom: 10px;
+}
+
+.footer-subheading {
+  font-size: 1rem;
+  margin-bottom: 8px;
+  color: #ffd633;
+}
+
+.footer-list li {
+  margin-bottom: 5px;
+}
+
+.footer-callback-form {
+  display: flex;
+  gap: 8px;
+}
+
+.footer-callback-form input {
+  flex: 1;
+  padding: 8px;
+  border-radius: 4px;
+  border: none;
+}
+
+.footer-callback-btn {
+  background: #ffcc00;
+  border: none;
+  padding: 8px 15px;
+  border-radius: 4px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.footer-bottom {
+  text-align: center;
+  font-size: 0.9rem;
+  margin-top: 20px;
+  color: #cce6dd;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .header-inner {
+    flex-direction: column;
+  }
+
+  .main-nav {
+    margin-top: 10px;
+  }
+
+  .hero-title {
+    font-size: 1.4rem;
+  }
+}
+/* ----- HEADER / NAV RESPONSIVE NÂNG CAO ----- */
+
+/* Bố cục header */
+.header-inner {
+  position: relative;
+}
+
+/* Nút gọi hotline trong header */
+.header-hotline {
+  order: 3;
+}
+
+/* Nút menu mobile (ẩn trên desktop) */
+.mobile-menu-toggle {
+  background: #00a859;
+  color: #fff;
+  border: none;
+  font-size: 1.2rem;
+  font-weight: 600;
+  line-height: 1;
+  border-radius: 6px;
+  padding: 8px 12px;
+  cursor: pointer;
+  display: none; /* mặc định ẩn trên desktop */
+}
+
+/* NAV chung */
+.main-nav {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  font-weight: 500;
+}
+
+/* Link trong nav */
+.main-nav > a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.main-nav > a:hover {
+  text-decoration: underline;
+}
+
+/* Dropdown khu vực */
+.nav-dropdown {
+  position: relative;
+}
+
+.nav-dropdown-btn {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  color: #fff;
+  font-weight: 500;
+  font-size: 1rem;
+  padding: 0;
+  line-height: 1.4;
+  text-align: left;
+}
+
+.nav-dropdown-btn:hover {
+  text-decoration: underline;
+}
+
+.nav-dropdown-content {
+  position: absolute;
+  right: 0;
+  top: 100%;
+  background-color: #fff;
+  min-width: 200px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+  border-radius: 6px;
+  overflow: hidden;
+  display: none; /* mặc định đóng */
+  z-index: 999;
+}
+
+.nav-dropdown-content a {
+  color: #004d2b;
+  padding: 10px 15px;
+  display: block;
+  text-decoration: none;
+  font-size: 0.95rem;
+}
+
+.nav-dropdown-content a:hover {
+  background-color: #f1f1f1;
+}
+
+/* ----- Desktop hover behavior ----- */
+@media (min-width: 769px) {
+  /* trên desktop, khi hover vào .nav-dropdown thì xổ */
+  .nav-dropdown:hover .nav-dropdown-content {
+    display: block;
+  }
+
+  /* nav luôn hiển thị dạng ngang */
+  .main-nav {
+    position: static;
+    background: transparent;
+    flex-direction: row;
+  }
+
+  .mobile-menu-toggle {
+    display: none;
+  }
+
+  .header-hotline {
+    order: 0;
+  }
+}
+
+/* ----- Mobile layout ----- */
+@media (max-width: 768px) {
+
+  /* header stack theo cột */
+  .header-inner {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  /* hotline nổi bật gần nút menu */
+  .header-hotline {
+    align-self: flex-end;
+  }
+
+  /* hiện nút menu mobile */
+  .mobile-menu-toggle {
+    display: block;
+    align-self: flex-end;
+  }
+
+  /* nav sẽ ẩn mặc định, mở ra bằng JS */
+  .main-nav {
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    background: #004d2b;
+    border: 2px solid #00a859;
+    border-radius: 10px;
+    padding: 15px;
+    width: 100%;
+    max-width: 320px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.4);
+  }
+
+  /* class .main-nav.open sẽ bật nav */
+  .main-nav.open {
+    display: flex;
+  }
+
+  .main-nav > a {
+    color: #fff;
+    font-size: 1rem;
+    padding: 8px 0;
+    width: 100%;
+  }
+
+  .nav-dropdown {
+    width: 100%;
+  }
+
+  .nav-dropdown-btn {
+    width: 100%;
+    text-align: left;
+    background: #006b3b;
+    border-radius: 6px;
+    padding: 10px 12px;
+    color: #fff;
+    font-size: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  /* Trong mobile, dropdown list sẽ là block riêng bên dưới */
+  .nav-dropdown-content {
+    position: static;
+    box-shadow: none;
+    background: #fff;
+    border-radius: 6px;
+    width: 100%;
+    margin-top: 8px;
+  }
+
+  .nav-dropdown-content a {
+    color: #004d2b;
+    border-bottom: 1px solid #eee;
+  }
+
+  .nav-dropdown-content a:last-child {
+    border-bottom: none;
+  }
+
+  /* Ẩn dropdown list mặc định, sẽ bật bằng JS */
+  .nav-dropdown-content {
+    display: none;
+  }
+
+  /* class .show sẽ bật nó */
+  .nav-dropdown-content.show {
+    display: block;
+  }
+}
+
+/* ----- Nút gọi nổi cố định ở góc màn hình mobile ----- */
+.call-floating-btn {
+  position: fixed;
+  right: 16px;
+  bottom: 16px;
+  background: #ffcc00;
+  color: #000;
+  font-weight: bold;
+  text-decoration: none;
+  padding: 12px 16px;
+  border-radius: 999px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.4);
+  font-size: 1rem;
+  line-height: 1.2;
+  z-index: 1000;
+  display: none; /* default ẩn trên desktop */
+}
+
+@media (max-width: 768px) {
+  .call-floating-btn {
+    display: block;
+  }
+}
+
+/* ========== STYLE PHẦN ẢNH GIỚI THIỆU ========== */
+.intro-gallery {
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 30px 16px 60px;
+}
+
+.intro-gallery-title {
+    text-align: center;
+    color: #1b7a0d;
+    font-size: 20px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+    letter-spacing: 0.5px;
+}
+
+.intro-gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 cột desktop */
+    gap: 20px;
+    justify-items: center;
+}
+
+.intro-item {
+    width: 100%;
+    aspect-ratio: 4 / 3;
+    border-radius: 6px;
+    overflow: hidden;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.intro-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.intro-item:hover {
+    transform: scale(1.03);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+/* Tablet */
+@media (max-width: 992px) {
+    .intro-gallery-grid {
+        grid-template-columns: repeat(2, 1fr); /* 2 cột */
+    }
+}
+
+/* Mobile */
+@media (max-width: 576px) {
+    .intro-gallery-grid {
+        grid-template-columns: 1fr; /* 1 cột */
+    }
+
+    .intro-gallery-title {
+        font-size: 18px;
+    }
+}
+/* ========== HẾT PHẦN ẢNH GIỚI THIỆU ========== */
+.cta-section {
+    background-color: #f4f4f4;
+    padding: 40px;
+    text-align: center;
+}
+
+.cta-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 30px;
+    flex-wrap: wrap;
+}
+
+.cta-box {
+    width: 23%;
+    background-color: white;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.check-icon {
+    color: #4caf50;
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.cta-box p {
+    font-size: 16px;
+    color: #555;
+}
+
+.cta-buttons {
+    margin-top: 20px;
+}
+
+.cta-btn {
+    padding: 15px 30px;
+    margin: 10px;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.cta-call {
+    background-color: #4caf50;
+}
+
+.cta-price {
+    background-color: #007bff;
+}
+
+.cta-btn:hover {
+    opacity: 0.8;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .cta-box {
+        width: 45%;
+    }
+}
+
+@media (max-width: 480px) {
+    .cta-box {
+        width: 100%;
+    }
+    .cta-btn {
+        width: 100%;
+        padding: 15px;
+        font-size: 16px;
+    }
+}

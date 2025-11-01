@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+  xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+
+  <url>
+    <loc>https://www.example.com/index.html</loc>
+    <priority>1.0</priority>
+  </url>
+
+  <url>
+    <loc>https://www.example.com/dich-vu-thong-tac-cong.html</loc>
+    <priority>0.9</priority>
+  </url>
+
+  <url>
+    <loc>https://www.example.com/thong-tac-bon-cau-bon-ve-sinh.html</loc>
+    <priority>0.9</priority>
+  </url>
+
+  <url>
+    <loc>https://www.example.com/hut-be-phot-gia-re-ha-noi.html</loc>
+    <priority>0.9</priority>
+  </url>
+
+  <url>
+    <loc>https://www.example.com/bang-gia-dich-vu-ve-sinh-moi-truong.html</loc>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://www.example.com/lien-he.html</loc>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Trang local SEO theo quận -->
+  <url>
+    <loc>https://www.thong-tac-cong-hung-yen.html</loc>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://www.thong-tac-cong-tinh-bac-ninh.html</loc>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://www.thong-tac-cong-tinh-hai-duong.html</loc>
+    <priority>0.8</priority>
+  </url>
+
+</urlset>
